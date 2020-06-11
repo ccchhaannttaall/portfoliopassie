@@ -8,6 +8,7 @@ import { OverMijComponent } from './over-mij/over-mij.component';
 import { ContactComponent } from './contact/contact.component';
 import {AppRoutingModule} from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import {NavigatiebarComponent} from './navigatiebar/navigatiebar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     ResultatenComponent,
     OverMijComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    NavigatiebarComponent
   ],
   imports: [
     BrowserModule,
