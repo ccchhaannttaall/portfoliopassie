@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import {AppRoutingModule} from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import {NavigatiebarComponent} from './navigatiebar/navigatiebar.component';
+import { SamenwerkingenComponent } from './samenwerkingen/samenwerkingen.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {NavigatiebarComponent} from './navigatiebar/navigatiebar.component';
     OverMijComponent,
     ContactComponent,
     HomeComponent,
-    NavigatiebarComponent
+    NavigatiebarComponent,
+    SamenwerkingenComponent
   ],
   imports: [
     BrowserModule,
