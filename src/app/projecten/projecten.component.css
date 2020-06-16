@@ -43,6 +43,8 @@ article.wrap {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 80%;
+  max-height: 600px;
+  overflow: scroll;
 }
 
 /*
