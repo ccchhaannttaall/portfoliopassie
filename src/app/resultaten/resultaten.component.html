@@ -1,138 +1,46 @@
  <section>
-    <h2>Over mij:</h2>
+    <h2>Mijn gevolgde vakken:</h2>
     <p>Een overzicht van de vakken die ik tot nu toe gevolgd heb, en hoe ik deze heb ervaren.
     </p>
     <!--Kon geen header krijgen ivm flex wrap styling-->
-    <article class="tabellen">
+    <article class="tabellen" >
       <table>
         <tr >
           <th>Gevolgd vak:</th>
           <th>Cijfer</th>
           <th>Ervaring</th>
-          <th>Aantal studiepunten</th>
+          <th>Studiepunten</th>
           <th>Gehaald?</th>
         </tr>
-        <tr>
-          <th>HCI</th>
-          <td>6</td>
-          <td>Uitdagend</td>
-          <td>3</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>UCD</th>
-          <td>8</td>
-          <td>Positief</td>
-          <td>3</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>Ontwerpg.</th>
-          <td>7</td>
-          <td>Positief</td>
-          <td>3</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>Project sport</th>
-          <td>8</td>
-          <td>Uitdagend</td>
-          <td>5</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>InternetS.</th>
-          <td>7,2</td>
-          <td>Uitdagend</td>
-          <td>3</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>ISGA</th>
-          <td>7,2</td>
-          <td>Positief</td>
-          <td>5</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>Content</th>
-          <td>8,5</td>
-          <td>Positief</td>
-          <td>3</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>Vormgeving</th>
-          <td>8,4</td>
-          <td>Positief</td>
-          <td>3</td>
-          <td><input type="checkbox" checked disabled> </td>
+        <tr *ngFor="let resultaat of resultaten.slice(0, 8)">
+          <th>{{resultaat.courseName}}</th>
+          <td>{{resultaat.grade}}</td>
+          <td>{{resultaat.experience}}</td>
+          <td>{{resultaat.ect}}</td>
+          <td>
+            <input *ngIf='resultaat.grade >= 5.5' type="checkbox" checked disabled>
+            <input *ngIf='resultaat.grade < 5.5'type="checkbox" disabled>
+          </td>
         </tr>
       </table>
       <!--hier begint tabel 2-->
       <table>
-        <tr>
+        <tr >
           <th>Gevolgd vak:</th>
           <th>Cijfer</th>
           <th>Ervaring</th>
-          <th>Aantal studiepunten</th>
+          <th>Studiepunten</th>
           <th>Gehaald?</th>
         </tr>
-        <tr>
-          <th>Webapplicaties</th>
-          <td>t.d.</td>
-          <td>Gemiddeld.</td>
-          <td>3</td>
-          <td><input type="checkbox" disabled> </td>
-        </tr>
-        <tr>
-          <th>V.I. design</th>
-          <td>8,2</td>
-          <td>Erg Positief</td>
-          <td>3</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>Product dev.</th>
-          <td>t.d.</td>
-          <td>Leuk!</td>
-          <td>3</td>
-          <td><input type="checkbox" disabled> </td>
-        </tr>
-        <tr>
-          <th>project Passie</th>
-          <td>t.d.</td>
-          <td>Leuk!</td>
-          <td>5</td>
-          <td><input type="checkbox" disabled> </td>
-        </tr>
-        <tr>
-          <th>Inleiding Prog.</th>
-          <td>7,9</td>
-          <td>Uitstekend</td>
-          <td>3</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>Informatie arch.</th>
-          <td>7,5</td>
-          <td>Uitdagend</td>
-          <td>3</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>Maatschap en int.</th>
-          <td>6,5</td>
-          <td>Uitdagend</td>
-          <td>3</td>
-          <td><input type="checkbox" checked disabled> </td>
-        </tr>
-        <tr>
-          <th>Project 4</th>
-          <td>8,5</td>
-          <td>Uitstekend</td>
-          <td>5</td>
-          <td><input type="checkbox" checked disabled> </td>
+        <tr *ngFor="let resultaat of resultaten.slice(8, 16)">
+          <th>{{resultaat.courseName}}</th>
+          <td>{{resultaat.grade || '-'}}</td>
+          <td>{{resultaat.experience}}</td>
+          <td>{{resultaat.ect}}</td>
+          <td>
+            <input *ngIf='resultaat.grade && resultaat.grade >= 5.5' type="checkbox" checked disabled>
+            <input *ngIf='!resultaat.grade || resultaat.grade < 5.5' type="checkbox" disabled>
+          </td>
         </tr>
       </table>
     </article>

@@ -1,6 +1,6 @@
  <section>
-    <h2>Over mij:</h2>
-    <p>Voorbeelden van mijn werk:
+    <h2>Voorbeelden van mijn werk:</h2>
+    <p>
       voor mijn website heb ik wat nieuwe logo's aangemaakt, en daaronder beginnen de voorbeelden voorbeelden
       van mijn huiswerk voor mijn opleiding CMD.
     </p>
@@ -8,7 +8,7 @@
   <!--Article mist header vanwege de toegepaste flexbox niet mogelijk om netjes erin weer te geven.-->
   <article class="wrap">
     <figure *ngFor="let project of projecten">
-      <img src='{{ "../../assets/images/projecten/" + project.courseName + "/thumbnail.png"}}' alt='{{project.altText}}}'>
+      <img src='{{ "src/assets/images/projecten/" + project.courseName + "/thumbnail.png"}}' alt='{{project.altText}}}'>
       <figcaption>{{project.information}}</figcaption>
     </figure>
   </article>

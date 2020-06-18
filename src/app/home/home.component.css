@@ -1,7 +1,3 @@
-h2 {
-  font-family: monospace;
-  color: #66cdaa;
-}
 
 img {
   height: 15em;
@@ -24,91 +20,6 @@ article.wrap {
 }
 
 /*
-hier begint de css van de tabellen
-*/
-th, td, table {
-  padding: 5px;
-  border: 3px solid grey;
-  border-collapse: collapse;
-  color: #000000;
-}
-
-table {
-  text-align: center;
-  border: black;
-  border-width: medium;
-  max-width: 50%;
-  margin-bottom: 2%;
-}
-
-.tabellen {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-/*
-Hier nog een oplossing maken met child van. tip van Niels.
-bron van Niels: https://www.w3.org/Style/Examples/007/evenodd.en.html
-*/
-tr:nth-child(odd) {
-  background-color: #deb4ea;
-}
-
-tr:nth-child(even) {
-  background-color: #dcedc1;
-}
-
-/*
-hier begint de css van het contactformulier
-*/
-article.contact {
-  margin-bottom: 2em;
-}
-
-textarea.contactbericht {
-  min-height: 9em;
-}
-
-form.contactform {
-  display: flex;
-  flex-direction: column;
-  margin: 0.5em;
-  background-image: url(../../assets/images/bloemen.svg);
-  background-position: left;
-  background-repeat: repeat-y;
-  background-size: 3em auto;
-  padding-left: 4em;
-}
-
-form.contactform>p {
-  display: flex;
-  justify-content: space-between;
-  margin: 0.5em;
-}
-
-form.contactform>input {
-  max-width: 20em;
-}
-
-input.submit {
-  padding-top: 1em;
-  margin-top: 5em;
-  margin-left: 20em;
-}
-
-fieldset {
-  max-width: 60%;
-  box-shadow: 5px 5px 7px #000000;
-}
-
-label {
-  padding-top: 5%
-}
-
-p:last-child {}
-
-/*
   hier begint de css van het blog
   */
 section.blog {
@@ -123,10 +34,11 @@ section.blog>article {
   border-radius: 5px;
   margin-bottom: 2em;
   padding: 0.5em;
-  background-image: url(../../assets/images/bloemen.svg);
+  background-image: url(src/assets/images/bloemen.svg);
   background-position: left;
   background-repeat: no-repeat;
   padding-left: 4em;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 section.blog>article>div {
@@ -138,15 +50,3 @@ section.blog>article>h4 {
   margin: 0;
 }
 
-/*
-hier begint de css van de Over mij pagina
-*/
-article.aboutme {
-  text-align: left;
-  padding-right: 40%;
-}
-
-section.blog>h4, ul {
-  list-style-type: none;
-  padding: 0.5em;
-}

@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Avenir;
+  font-size: medium;
+  background-color: white;
+  margin: 0px;
+  position: relative;
+  min-height: 100vh;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: Avenir;
+  color: grey;
+}
+
+
+p{
+  font-family: Avenir;
+  color: grey;
+}

@@ -12,7 +12,7 @@ export const PROJECTEN: Project[] = [
   { courseName: 'NPD', altText: ' ', information: 'NPD' },
   // { courseName: 'Ontwerpgeschiedenis', altText: ' ', information: 'bloem' },
   { courseName: 'Professionalisering', altText: ' ', information: 'Professionalisering' },
-  { courseName: 'Project_Slaap_2', altText: ' ', information: 'Project slaap team 2' },
+  { courseName: 'Project_Slaap_2', altText: ' ', information: 'Resultaat slaap team 2' },
   // { courseName: 'project_sport_1', altText: ' ', information: 'bloem' },
   { courseName: 'SRP_1', altText: ' ', information: 'SRP 1' },
   { courseName: 'UCD', altText: ' ', information: 'User centered design' },

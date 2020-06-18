@@ -1,16 +1,21 @@
 .nav>li {
-  background-image: url(../../assets/images/star.png);
+  background-image: url(src/assets/images/round.svg);
   background-repeat: no-repeat;
   background-position: left;
-  max-width: 20px;
-  padding-left: 20px;
+  max-width: 50px;
+  padding-left: 30px;
   white-space: nowrap;
+  padding-right: 50px;
 }
 
-/*
-Let op maak van je css vooral elementen .class zodat als alles instort je teminste nog de html kan koppelen.
--J. Leenman
-*/
+a{
+  font-family: "Avenir Next Condensed";
+  font-style: normal;
+  color: grey;
+  font-size: large;
+}
+
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -20,8 +25,8 @@ Let op maak van je css vooral elementen .class zodat als alles instort je temins
   align-content: center;
   padding: 1em;
   margin: 0;
-  border: 1px solid #555;
-  background-color: #deb4ea;
-  font-style: italic;
+  border-collapse: collapse;
+  background-color: wheat;
+  font-style: oblique;
   list-style: none;
 }
